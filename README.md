@@ -56,7 +56,7 @@ and later years. This model was described in the paper
 `GenCast: Diffusion-based ensemble forecasting for medium-range weather`
 (https://arxiv.org/abs/2312.15796)
 
-2.  `GenCast 0p25deg Operational <2019`, GenCast model at 0.25deg resolution, with 13 pressure levels and a 6
+2.  `GenCast 0p25deg Operational <2022`, GenCast model at 0.25deg resolution, with 13 pressure levels and a 6
 times refined icosahedral mesh. This model is trained on ERA5 data from
 1979 to 2018, and fine-tuned on HRES-fc0 data from
 2016 to 2021 and can be causally evaluated on 2022 and later years.
@@ -90,6 +90,8 @@ subdir of the Google Cloud Bucket.
 [cloud_vm_setup.md](https://github.com/google-deepmind/graphcast/blob/main/docs/cloud_vm_setup.md)
 contains detailed instructions on launching a Google Cloud TPU VM. This provides
 a means of running models (1-3) in the separate `gencast_demo_cloud_vm.ipynb` through [Colaboratory](https://colab.research.google.com/github/deepmind/graphcast/blob/master/gencast_demo_cloud_vm.ipynb).
+
+The document also provides [instructions](https://github.com/google-deepmind/graphcast/blob/main/docs/cloud_vm_setup.md#running-inference-on-gpu) for running GenCast on a GPU. This requires using a different attention implementation.
 
 ### Brief description of relevant library files
 
@@ -163,7 +165,7 @@ WARNING: For backwards compatibility, we have also left GraphCast data in the to
 [Python](https://www.python.org/),
 [SciPy](https://scipy.org/),
 [Tree](https://github.com/deepmind/tree),
-[Trimesh](https://github.com/mikedh/trimesh)
+[Trimesh](https://github.com/mikedh/trimesh),
 [XArray](https://github.com/pydata/xarray) and
 [XArray-TensorStore](https://github.com/google/xarray-tensorstore).
 
@@ -226,4 +228,4 @@ Use of the third-party materials referred to above may be governed by separate t
 
 ## Contact
 
-For feedback and questions, contact us at gencast@google.com.
+For feedback and questions, contact us at gencast@google.com. Any information collected via email will be used in accordance with [Google's privacy policy](http://policies.google.com/privacy).
